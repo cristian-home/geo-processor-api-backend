@@ -160,7 +160,7 @@ dependencies = [
 ]
 
 [package.optional-dependencies]
-test = [
+tests = [
     { name = "httpx" },
     { name = "pytest" },
     { name = "pytest-asyncio" },
@@ -170,17 +170,17 @@ test = [
 [package.metadata]
 requires-dist = [
     { name = "fastapi", specifier = ">=0.104.1" },
-    { name = "httpx", marker = "extra == 'test'", specifier = ">=0.25.1" },
+    { name = "httpx", marker = "extra == 'tests'", specifier = ">=0.25.1" },
     { name = "pydantic", specifier = ">=2.5.0" },
     { name = "pydantic-settings", specifier = ">=2.0.0" },
-    { name = "pytest", marker = "extra == 'test'", specifier = ">=7.4.3" },
-    { name = "pytest-asyncio", marker = "extra == 'test'", specifier = ">=0.26.0" },
-    { name = "pytest-cov", marker = "extra == 'test'", specifier = ">=4.1.0" },
+    { name = "pytest", marker = "extra == 'tests'", specifier = ">=7.4.3" },
+    { name = "pytest-asyncio", marker = "extra == 'tests'", specifier = ">=0.26.0" },
+    { name = "pytest-cov", marker = "extra == 'tests'", specifier = ">=4.1.0" },
     { name = "requests", specifier = ">=2.32.3" },
     { name = "ruff", specifier = ">=0.11.11" },
     { name = "uvicorn", extras = ["standard"], specifier = ">=0.24.0" },
 ]
-provides-extras = ["test"]
+provides-extras = ["tests"]
 
 [[package]]
 name = "h11"
